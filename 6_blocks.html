@@ -8,17 +8,95 @@
         <title>Blocos</title>
     </head>
 
+    <style>
+        .minha_classe {
+            text-decoration: underline;
+            text-decoration-color: red;
+        }
+
+        #vermelho {
+            color: #FF0000;
+        }
+
+        .centro {
+            text-align: center;
+        }
+
+        #ref {
+            text-align:right;
+            width: 90%;
+            display: block;
+        }
+
+        address {
+            max-width: 250px;
+            margin: auto;
+            margin-top: 50px;
+            text-align: right;
+        }
+
+        hr {
+            border: default 1px black;
+        }
+
+        .bloco {
+            display: block;
+        }
+
+    </style>
+
     <body>
-        <h1>Blocos / Divs</h1>
-        
+        <hr />
+        <h1 class="centro">Blocos / Divs</h1>
+
+        <hr />        
         <h3>Elementos block-level</h3>
 
         <p>Sempre iniciam uma nova linha e tomam toda a largura da página.</p>
-        <div>Exemplo de elemento block-level</div>
+        <div>
+            Exemplo de elemento block-level: <br />
+            A tag < div > não requer nenhum atributo, mas geralmente são utilizados os atributos:
+                <!-- Tags podem pertencer a mais de uma classe -->
+                <div class="minha_classe centro">id,</div>
+                <div class="minha_classe centro">class,</div>
+                <div class="minha_classe centro">style.</div>
+        </div>
 
+        Outras tags block-level: < hr > < table > < h1 > ... < h6 > < video > < p >  etc...
+
+        <!-- Uma linha simples tbm é block-level -->
+        <hr />
 
         <h3>Elementos inline-level</h3>
+        <p>Não iniciam uma nova linha e tomam apenas o tamanho necessário/definido.</p>
+        Exemplo de elementos <span id="vermelho"> inline-level. </span>
+        A tag < span > não requer nenhum atributo, mas geralmente são utilizados os atributos:
+                <span class="minha_classe">id</span>,
+                <span class="minha_classe">class</span>,
+                <span class="minha_classe">style</span>.
+        <br />
+        Outras tags inline-level: < a > < b > < sub > < br /> etc...
+        <hr />
 
+        <strong>Observações:</strong>
+        As citações/quotations são muito <q>úteis</q>.
+        <p>Digite <span class="minha_classe">about:mozilla</span> no Mozilla Firefox:
+            <blockquote cite="about:mozilla">
+                The Beast adopted new raiment and studied the ways of Time and Space and Light and the Flow of energy through the Universe. From its studies, the Beast fashioned new structures from oxidised metal and proclaimed their glories. And the Beast’s followers rejoiced, finding renewed purpose in these teachings.
+            </blockquote>
+            <span id="ref"> -- from The Book of Mozilla, 11:14.</span></p>
+
+        <p>Siga os padrões de acessibilidade e garanta uma <abbr title="World Wide Web">WWW</abbr> mais acessível.</p>
+
+        <h5>Tag < bdo > for Bi-Directional Override</h5>
+        <bdo dir="rtl" class="bloco">Allahu Akbar</bdo> <br />
+        <cite class="bloco" style="text-align: right;"> -- Takbir</cite>
+
+
+
+        <address>
+            Av. Expedicionários, 2150 - Campo da Água Verde, Canoinhas - SC, 89460-000.
+        </address>
     </body>
 
 </html>
