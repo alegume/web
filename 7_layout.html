@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>Layout</title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            header, footer {
+                background-color: grey;
+                color: white;
+                padding: 15px;
+                text-transform: uppercase;
+                font-style: bold;
+            }
+
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            section {
+                float: left;
+                width: 25%;
+            }
+
+            aside {
+                width: 75%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>Layouts</header>
+        <p>O HTML 5 traz novas tags de caráter semântico para compor nossos sites.</p>
+        <nav>
+            <!-- Vazio -->
+        </nav>
+        <main class="clearfix">
+            <section>
+                <img src="img/img_sem_elements.gif" alt="elementos de layout" />
+            </section>
+            <aside>
+                <ul>
+                    <li>a</li>
+                    <li>b</li>
+                    <li>c</li>
+                </ul>
+            </aside>
+        </main>
+        <footer>HTML 5</footer>
+    </body>
+</html>
