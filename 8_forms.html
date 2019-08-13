@@ -18,103 +18,104 @@
 
 </head>
 <body>
-		<h2>Formulários</h2>
+	<h2>Formulários</h2>
 
-		<!-- action é a url que receberá os dados -->
-		<!-- method se refere o método http que será utilizado para enviar os dados  -->
-		<form action="http://localhost/meusite/contato/" method="get">
+	<!-- action é a url que receberá os dados -->
+	<!-- method se refere o método http que será utilizado para enviar os dados  -->
+	<form action="http://localhost/meusite/contato/" method="get">
+		<fieldset>
+			<legend>Enviar email</legend>
+			<fieldset>
+				<legend>Dados pessoais</legend>
+				Nome:<br />
+				<input type="text" name="nome" autofocus /><br />
+				Sobrenome:<br />
+				<!-- Value é um valor padrão -->
+				<input type="text" name="sobrenome" value="da Silva" />
+				<br />
 				<fieldset>
-						<legend>Enviar email</legend>
-						<fieldset>
-								<legend>Dados pessoais</legend>
-								Nome:<br />
-								<input type="text" name="nome" autofocus /><br />
-								Sobrenome:<br />
-								<!-- Value é um valor padrão -->
-								<input type="text" name="sobrenome" value="da Silva" />
-								<br />
-								<fieldset>
-										<legend>Sexo</legend>
-										<input type="radio" name="sexo" value="masculino"> Masculino<br>
-										<!-- checked é o input selecionado por padrão -->
-										<input type="radio" name="sexo" value="feminino" checked> Feminino<br>
-										<input type="radio" name="sexo" value="outro"> Outro
-								</fieldset>
-						</fieldset>
-						<br />
-						<fieldset>
-								<legend>Dados do email</legend>
-								Assunto: <br />
-								<!-- mutiple permite que mais de uma opção seja selecionada -->
-								<select>
-										<optgroup label="Reclamações">
-												<option value="reclamacoes_suporte">Suporte</option>
-												<option value="reclamacoes_almoxarifado" >Almoxarifado</option>
-												<option value="reclamacoes_vendas">Vendas</option>
-										</optgroup>
-										<optgroup label="Sugestões">
-												<option value="sugestoes_suporte">Suporte</option>
-												<option value="sugestoes_almoxarifado">Almoxarifado</option>
-												<option value="sugestoes_vendas">Vendas</option>
-										</optgroup>
-										<optgroup label="Outros">
-												<option value="outros">Outros</option>
-										</optgroup>
-								</select>
-								<br />
-								Mensagem: <br />
-								<textarea rows="10" cols="22" name="mensagem_email"></textarea>
-								<br />
-								Tipo de mensagem: <br />
-								<input type="checkbox" name="texto" value="texto" />Texto
-								<input type="checkbox" name="html" value="html" />HTML
-						</fieldset>
-						<br />
-						<fieldset>
-								<legend>Ações</legend>
-								<input type="submit" value="Enviar" style="width: 72px; text-align: center; padding: 2px;" />
-								<input type="reset" value="Limpar" style="width: 72px; text-align: center; padding: 2px;" />
-						</fieldset>
-						<br />
-						<fieldset style="width: 180px;">
-								<legend>Miscelânea</legend>
-								<button type="button" onclick="console.log('Debug is on the table')" style="width: 170px;">Debugar!</button>
-								Funcionários:
-								<input list="funcionarios">
-								<datalist id="funcionarios">
-										<option value="João">
-										<option value="Pedro">
-										<option value="Paulo">
-										<option value="Maria">
-										<option value="Bruna">
-										<option value="Joana">
-								</datalist>
-								Senha:<br />
-								<input type="password" name="psw" />
-								Cor:
-								<input type="color" name="cor" /> <br />
-								Data:
-								<input type="date" name="data" min="2018-07-01" max="2018-10-01" /> <br />
-								E-mail:
-								<!-- required é obrigatório -->
-								<input type="email" name="email" required /> <br />
-								Arquivo: <input type="file" name="arq" />
-								Outfit:
-								<input type="number" name="dol" min="0" max="150" step="5" />
-								Padrão:
-								<input type="text" name="regex" pattern="[A-Z]{1,3}" title="Três letras maiúsculas" />
-								Nota:
-								<input type="range" name="nota" min="0" max="10" />
-								Buscar:
-								<input type="search" name="buscar" />
-								Site:
-								<!-- Alguns smartphones adicionam um .com no teclado pra facilitar -->
-								<input type="url" name="site" />
-								Campo estáticos:
-								<input type="text" name="nome2" value="Dom" readonly />
-								<input type="text" name="sobrenome2" value=Pedro disabled size="30" />
-						</fieldset>
+					<legend>Sexo</legend>
+					<input type="radio" name="sexo" value="masculino"> Masculino<br>
+					<!-- checked é o input selecionado por padrão -->
+					<input type="radio" name="sexo" value="feminino" checked> Feminino<br>
+					<input type="radio" name="sexo" value="outro"> Outro
 				</fieldset>
-		</form>
+			</fieldset>
+			<br />
+			<fieldset>
+				<legend>Dados do email</legend>
+				Assunto: <br />
+				<!-- mutiple permite que mais de uma opção seja selecionada -->
+				<select>
+					<optgroup label="Reclamações">
+						<option value="reclamacoes_suporte">Suporte</option>
+						<option value="reclamacoes_almoxarifado" >Almoxarifado</option>
+						<option value="reclamacoes_vendas">Vendas</option>
+					</optgroup>
+					<optgroup label="Sugestões">
+						<option value="sugestoes_suporte">Suporte</option>
+						<option value="sugestoes_almoxarifado">Almoxarifado</option>
+						<option value="sugestoes_vendas">Vendas</option>
+					</optgroup>
+					<optgroup label="Outros">
+						<option value="outros">Outros</option>
+					</optgroup>
+				</select>
+				<br />
+				Mensagem: <br />
+				<textarea rows="10" cols="22" name="mensagem_email"></textarea>
+				<br />
+				Tipo de mensagem: <br />
+				<input type="checkbox" name="texto" value="texto" />Texto
+				<input type="checkbox" name="html" value="html" />HTML
+			</fieldset>
+			<br />
+			<fieldset>
+				<legend>Ações</legend>
+				<input type="submit" value="Enviar" style="width: 72px; text-align: center; padding: 2px;" />
+				<input type="reset" value="Limpar" style="width: 72px; text-align: center; padding: 2px;" />
+			</fieldset>
+			<br />
+			<fieldset style="width: 180px;">
+				<legend>Miscelânea</legend>
+				<button type="button" onclick="console.log('Debug is on the table')" style="width: 170px;">Debugar!</button>
+				Funcionários:
+				<input list="funcionarios">
+				<datalist id="funcionarios">
+					<option value="João">
+					<option value="Pedro">
+					<option value="Paulo">
+					<option value="Maria">
+					<option value="Bruna">
+					<option value="Joana">
+				</datalist><br />
+				Senha:
+				<input type="password" name="psw" />
+				<br />
+				Cor:
+				<input type="color" name="cor" /> <br />
+				Data:
+				<input type="date" name="data" min="2018-07-01" max="2018-10-01" /> <br />
+				E-mail:
+				<!-- required é obrigatório -->
+				<input type="email" name="email" required /> <br />
+				Arquivo: <input type="file" name="arq" />
+				Outfit:
+				<input type="number" name="dol" min="0" max="150" step="5" />
+				Padrão:
+				<input type="text" name="regex" pattern="[A-Z]{1,3}" title="Três letras maiúsculas" />
+				Nota:
+				<input type="range" name="nota" min="0" max="10" />
+				Buscar:
+				<input type="search" name="buscar" />
+				Site:
+				<!-- Alguns smartphones adicionam um .com no teclado pra facilitar -->
+				<input type="url" name="site" />
+				Campo estáticos:
+				<input type="text" name="nome2" value="Dom" readonly />
+				<input type="text" name="sobrenome2" value=Pedro disabled size="30" />
+			</fieldset>
+		</fieldset>
+	</form>
 </body>
 </html>
