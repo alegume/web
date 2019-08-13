@@ -2,101 +2,101 @@
 
 <html lang="pt-br">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Blocos</title>
+		<head>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				<title>Blocos</title>
 
-        <style>
-            .minha_classe {
-                text-decoration: underline;
-                text-decoration-color: red;
-            }
+				<style>
+						.minha_classe {
+								text-decoration: underline;
+								text-decoration-color: red;
+						}
 
-            #vermelho {
-                color: #FF0000;
-            }
+						#vermelho {
+								color: #FF0000;
+						}
 
-            .centro {
-                text-align: center;
-            }
+						.centro {
+								text-align: center;
+						}
 
-            #ref {
-                text-align:right;
-                width: 90%;
-                display: block;
-            }
+						#ref {
+								text-align:right;
+								width: 90%;
+								display: block;
+						}
 
-            address {
-                max-width: 250px;
-                margin: auto;
-                margin-top: 50px;
-                text-align: right;
-            }
+						address {
+								max-width: 250px;
+								margin: auto;
+								margin-top: 50px;
+								text-align: right;
+						}
 
-            hr {
-                border: solid 1px black;
-            }
+						hr {
+								border: solid 1px black;
+						}
 
-            .bloco {
-                display: block;
-            }
+						.bloco {
+								display: block;
+						}
 
-        </style>
-    </head>
+				</style>
+		</head>
 
-    <body>
-        <hr />
-        <h1 class="centro">Blocos / Divs</h1>
+		<body>
+				<hr />
+				<h1 class="centro">Blocos / Divs</h1>
 
-        <hr />        
-        <h3>Elementos block-level</h3>
+				<hr />
+				<h3>Elementos block-level</h3>
 
-        <p>Sempre iniciam uma nova linha e tomam toda a largura da página.</p>
-        <div>
-            Exemplo de elemento block-level: <br />
-            A tag &lt;div&gt; não requer nenhum atributo, mas geralmente são utilizados os atributos:
-                <!-- Tags podem pertencer a mais de uma classe -->
-                <div class="minha_classe centro">id,</div>
-                <div class="minha_classe centro">class,</div>
-                <div class="minha_classe centro">style.</div>
-        </div>
+				<p>Sempre iniciam uma nova linha e tomam toda a largura da página.</p>
+				<div>
+						Exemplo de elemento block-level: <br />
+						A tag &lt;div&gt; não requer nenhum atributo, mas geralmente são utilizados os atributos:
+								<!-- Tags podem pertencer a mais de uma classe -->
+								<div class="minha_classe centro">id,</div>
+								<div class="minha_classe centro">class,</div>
+								<div class="minha_classe centro">style.</div>
+				</div>
 
-        Outras tags block-level: &lt;hr&gt; &lt;table&gt; &lt;h1&gt; ... &lt;h6&gt; &lt;video&gt; &lt;p&gt;  etc...
+				Outras tags block-level: &lt;hr&gt; &lt;table&gt; &lt;h1&gt; ... &lt;h6&gt; &lt;video&gt; &lt;p&gt;  etc...
 
-        <!-- Uma linha simples tbm é block-level -->
-        <hr />
+				<!-- Uma linha simples tbm é block-level -->
+				<hr />
 
-        <h3>Elementos inline-level</h3>
-        <p>Não iniciam uma nova linha e tomam apenas o tamanho necessário/definido.</p>
-        Exemplo de elementos <span id="vermelho"> inline-level. </span>
-        A tag &lt;span > não requer nenhum atributo, mas geralmente são utilizados os atributos:
-                <span class="minha_classe">id</span>,
-                <span class="minha_classe">class</span>,
-                <span class="minha_classe">style</span>.
-        <br />
-        Outras tags inline-level: &lt;a&gt; &lt;b&gt; &lt;sub&gt; &lt;br /&gt; etc...
-        <hr />
+				<h3>Elementos inline-level</h3>
+				<p>Não iniciam uma nova linha e tomam apenas o tamanho necessário/definido.</p>
+				Exemplo de elementos <span id="vermelho"> inline-level. </span>
+				A tag &lt;span > não requer nenhum atributo, mas geralmente são utilizados os atributos:
+								<span class="minha_classe">id</span>,
+								<span class="minha_classe">class</span>,
+								<span class="minha_classe">style</span>.
+				<br />
+				Outras tags inline-level: &lt;a&gt; &lt;b&gt; &lt;sub&gt; &lt;br /&gt; etc...
+				<hr />
 
-        <strong>Observações:</strong>
-        As citações/quotations são muito <q>úteis</q>.
-        <p>Digite <span class="minha_classe">about:mozilla</span> no Mozilla Firefox:</p>
-            <blockquote cite="about:mozilla">
-                The Beast adopted new raiment and studied the ways of Time and Space and Light and the Flow of energy through the Universe. From its studies, the Beast fashioned new structures from oxidised metal and proclaimed their glories. And the Beast’s followers rejoiced, finding renewed purpose in these teachings.
-            </blockquote>
-            <span id="ref"> -- from The Book of Mozilla, 11:14.</span>
+				<strong>Observações:</strong>
+				As citações/quotations são muito <q>úteis</q>.
+				<p>Digite <span class="minha_classe">about:mozilla</span> no Mozilla Firefox:</p>
+						<blockquote cite="about:mozilla">
+								The Beast adopted new raiment and studied the ways of Time and Space and Light and the Flow of energy through the Universe. From its studies, the Beast fashioned new structures from oxidised metal and proclaimed their glories. And the Beast’s followers rejoiced, finding renewed purpose in these teachings.
+						</blockquote>
+						<span id="ref"> -- from The Book of Mozilla, 11:14.</span>
 
-        <p>Siga os padrões de acessibilidade e garanta uma <abbr title="World Wide Web">WWW</abbr> mais acessível.</p>
+				<p>Siga os padrões de acessibilidade e garanta uma <abbr title="World Wide Web">WWW</abbr> mais acessível.</p>
 
-        <h5>Tag &lt;bdo > for Bi-Directional Override</h5>
-        <bdo dir="rtl" class="bloco">Allahu Akbar</bdo> <br />
-        <cite class="bloco" style="text-align: right;"> -- Takbir</cite>
+				<h5>Tag &lt;bdo > for Bi-Directional Override</h5>
+				<bdo dir="rtl" class="bloco">Allahu Akbar</bdo> <br />
+				<cite class="bloco" style="text-align: right;"> -- Takbir</cite>
 
 
 
-        <address>
-            Av. Expedicionários, 2150 - Campo da Água Verde, Canoinhas - SC, 89460-000.
-        </address>
-    </body>
+				<address>
+						Av. Expedicionários, 2150 - Campo da Água Verde, Canoinhas - SC, 89460-000.
+				</address>
+		</body>
 
 </html>
