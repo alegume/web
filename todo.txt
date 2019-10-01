@@ -1,0 +1,17 @@
+---------- TODO
+Ícones, menu em todas as práginas
+
+
+
+
+---------- DOING
+criação menu
+
+
+
+
+---------- DONE
+branchs
+css
+html
+Criação do repo
