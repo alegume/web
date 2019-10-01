@@ -1,10 +1,20 @@
+body {
+	font-size: 18px;
+}
+
+aside a {
+	display: block;
+}
+
 .impar {
 	text-align: center;
 }
+
 #diferentao {
 	color: #DDD;
 	text-align: right;
 }
+
 .cor {
 	color: #0B0;
 }
