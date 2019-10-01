@@ -15,8 +15,9 @@
 			<script type="text/javascript" src="vendor/js/bootstrap.bundle.min.js"></script>
 		</head>
 		<body>
+			<div class="container">
 				<header>
-					<h1>Site sobre HTML 5</h1>
+					<h1 class="display-2">HTML 5 <small>+<code> Bootstrap 4</code></small></h1>
 				</header>
 				<main>
 					<nav>
@@ -32,23 +33,26 @@
 							<li><a href="9_intro_css.html">Introdução ao CSS</a></li>
 						</ul>
 					</nav>
-					<article>
-						<h2>Bem-Vindo!</h2>
-						<p>Olá, caro navegante!</p>
-						<p>Usaremos esse site para aprender, de forma prática, um pouco sobre HTML 5 e CSS 3. Espero que você goste!</p>
-					</article>
-					<section>
-						<h3>Links úteis</h3>
-						<a href="https://www.w3schools.com/html/default.asp">Tutorial HTML 5</a>
-						<a href="https://www.w3schools.com/css/default.asp">Tutorial CSS 3</a>
-						<a href="https://validator.w3.org">Validador de HTML 5</a>
-						<a href="https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp">Tutorial Bootstrap 4</a>
-						<a href="https://getbootstrap.com/">Site Oficial Bootstrap 4</a>
-					</section>
+					<div class="row">
+						<article class="col-sm-8">
+							<h2 class="display-3">Bem-Vindo!</h2>
+							<p>Olá, caro navegante!</p>
+							<p>Usaremos esse site para aprender, de forma prática, um pouco sobre HTML 5 e CSS 3. Espero que você goste!</p>
+						</article>
+						<section class="col-sm-4">
+							<h3 class="display-4">Links úteis</h3>
+							<a href="https://www.w3schools.com/html/default.asp">Tutorial HTML 5</a>
+							<a href="https://www.w3schools.com/css/default.asp">Tutorial CSS 3</a>
+							<a href="https://validator.w3.org">Validador de HTML 5</a>
+							<a href="https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp">Tutorial Bootstrap 4</a>
+							<a href="https://getbootstrap.com/">Site Oficial Bootstrap 4</a>
+						</section>
+					</div>
 				</main>
 				<footer>
 					<br /><br /><br />
 					IFSC 2019
 				</footer>
+			</div>
 		</body>
 </html>
