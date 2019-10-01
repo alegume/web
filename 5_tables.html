@@ -6,138 +6,153 @@
 				<meta charset="utf-8">
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 				<title>Tabelas</title>
-
-				<style>
-						table, th, td {
-								border: solid 1px black;
-								border-collapse: collapse;
-								padding: 10px;
-						}
-
-						th {
-								text-align: center;
-						}
-
-						td {
-								text-align: left;
-						}
-
-						p {
-								max-width: 600px;
-						}
-
-						tbody#destaque:hover, tr:hover {
-								background-color: #ccc;
-						}
-
-				</style>
+				<link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+				<link rel="stylesheet" href="style/style.css">
+				<script type="text/javascript" src="vendor/jquery/jquery-3.4.1.min.js"></script>
+				<script type="text/javascript" src="vendor/js/bootstrap.bundle.min.js"></script>
 
 		</head>
 
 		<body>
-				<h1>Tabelas</h1>
-				<table>
-						<caption>Exemplo de Legenda</caption>
-						<!-- Caption precisa estar logo apos table -->
-						<tr>
-								<th>Cabeçalho 1</th>
-								<th>Cabeçalho 2</th>
-								<th>Cabeçalho 3</th>
-						</tr>
+			<div class="container bg-light text-dark">
+				<header>
+					<h1 class="display-2">HTML 5 <small>+<code> Bootstrap 4</code></small></h1>
+				</header>
+				<main>
+					<nav>
+						<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="1_formatacao.html">Formatação</a></li>
+							<li><a href="2_meta_tags.html">Meta Tags</a></li>
+							<li><a href="3_links.html">Links</a></li>
+							<li><a href="4_lists.html">Listas</a></li>
+							<li><a href="5_tables.html">Tabelas</a></li>
+							<li><a href="6_blocks.html">Blocos</a></li>
+							<li><a href="7_layout.html">Layout</a></li>
+							<li><a href="8_forms.html">Formulários</a></li>
+							<li><a href="9_intro_css.html">Introdução ao CSS</a></li>
+						</ul>
+					</nav>
+					<div class="row">
+						<article class="col-sm-8">
+							<h2 class="display-3">Tabelas</h2>
+							<table class="table table-striped table-hover">
+									<caption>Exemplo de Legenda</caption>
+									<!-- Caption precisa estar logo apos table -->
+									<tr>
+											<th>Cabeçalho 1</th>
+											<th>Cabeçalho 2</th>
+											<th>Cabeçalho 3</th>
+									</tr>
 
-						<tr>
-								<!--
-										td contem os dados das células
-										Pode conter todo tipo de elemento html como
-										texto, imagens, links, outras tabelas, etc
-								-->
-								<td>Dado 1</td>
-								<td>Dado 2</td>
-								<td>Dado 3</td>
-						</tr>
-						<tr>
-								<td>Dado 1</td>
-								<td>Dado 2</td>
-								<td>Dado 3</td>
-						</tr>
-						<tr>
-								<td>Dado 1</td>
-								<td>Dado 2</td>
-								<td>Dado 3</td>
-						</tr>
-				</table>
+									<tr>
+											<!--
+													td contem os dados das células
+													Pode conter todo tipo de elemento html como
+													texto, imagens, links, outras tabelas, etc
+											-->
+											<td>Dado 1</td>
+											<td>Dado 2</td>
+											<td>Dado 3</td>
+									</tr>
+									<tr>
+											<td>Dado 1</td>
+											<td>Dado 2</td>
+											<td>Dado 3</td>
+									</tr>
+									<tr>
+											<td>Dado 1</td>
+											<td>Dado 2</td>
+											<td>Dado 3</td>
+									</tr>
+							</table>
 
-				<br />
 
-				<table>
-						<tr>
-								<th>Cliente</th>
-								<th colspan="2">Telefones</th>
-						</tr>
+							<div class="row">
+								<div class="col">
+									<table class="table table-striped table-hover table-dark table-sm">
+											<tr>
+													<th>Cliente</th>
+													<th colspan="2">Telefones</th>
+											</tr>
 
-						<tr>
-								<td>Mc Bin Laden</td>
-								<td>47 99999-8877</td>
-								<td>47 99999-8878</td>
-						</tr>
+											<tr>
+													<td>Mc Bin Laden</td>
+													<td>(47)99999-8877</td>
+													<td>(47)99999-8878</td>
+											</tr>
 
-						<tr>
-								<td>Mc Toy</td>
-								<td>47 99999-8876</td>
-								<td>47 99999-8875</td>
-						</tr>
-				</table>
+											<tr>
+													<td>Mc Toy</td>
+													<td>(47)99999-8876</td>
+													<td>(47)99999-8875</td>
+											</tr>
+									</table>
+								</div>
+								<div class="col-5">
+									<table class="table table-striped table-dark table-sm">
+											<tr>
+													<th>Cliente:</th>
+													<td>Mc DeuMal</td>
+											</tr>
+											<tbody id="destaque">
+											<tr>
+													<th rowspan="2">Telefones:</th>
+													<td>(47)99999-7625</td>
+											</tr>
+											<tr>
+													<td>(47)99999- 4321</td>
+											</tr>
+											<tbody>
+									</table>
+								</div>
+							</div>
+							<br />
+							<h2>Boas práticas</h2>
+							<p>É sempre bom separar os elementos em uma tabela por categoria como: thead, tbody, tfoot. Será de grande ajuda ao definir os estilos com CSS e é importante para ferramentas de acessibilidade.</p>
+							<p>Permite que o navegador possa rolar os dados independentes do cabeçalho ou rodapé da tabela. Também permite que o cabeçalho e rodapé possam ser replicados nas diversas páginas, no caso de impressão de longas tabelas.</p>
+							<p>
 
-				<br />
-
-				<table>
-						<tr>
-								<th>Cliente:</th>
-								<td>Mc DeuMal</td>
-						</tr>
-						<tbody id="destaque">
-						<tr>
-								<th rowspan="2">Telefones:</th>
-								<td>47 99999-7625</td>
-						</tr>
-						<tr>
-								<td>47 99999- 4321</td>
-						</tr>
-						<tbody>
-				</table>
-
-				<br />
-				<h1>Boas práticas</h1>
-				<p>É sempre bom separar os elementos em uma tabela por categoria como: thead, tbody, tfoot. Será de grande ajuda ao definir os estilos com CSS e é importante para ferramentas de acessibilidade.</p>
-				<p>Permite que o navegador possa rolar os dados independentes do cabeçalho ou rodapé da tabela. Também permite que o cabeçalho e rodapé possam ser replicados nas diversas páginas, no caso de impressão de longas tabelas.</p>
-				<p>
-
-				</p>
-				<table>
-						<thead>
-								<tr>
-										<th>Cabeçalho 1</th>
-										<th>Cabeçalho 2</th>
-								</tr>
-						</thead>
-						<tbody>
-								<tr>
-										<td>Conteúdo 1</td>
-										<td>Conteúdo 2</td>
-								</tr>
-								<tr>
-										<td>Conteúdo 3</td>
-										<td>Conteúdo 4</td>
-								</tr>
-						</tbody>
-						<tfoot>
-								<tr>
-										<td>Rodapé 1</td>
-										<td>Rodapé 2</td>
-								</tr>
-						</tfoot>
-				</table>
-
+							</p>
+							<table class="table table-striped table-hover">
+									<thead class="thead-dark">
+											<tr>
+													<th>Cabeçalho 1</th>
+													<th>Cabeçalho 2</th>
+											</tr>
+									</thead>
+									<tbody>
+											<tr>
+													<td>Conteúdo 1</td>
+													<td>Conteúdo 2</td>
+											</tr>
+											<tr>
+													<td>Conteúdo 3</td>
+													<td>Conteúdo 4</td>
+											</tr>
+									</tbody>
+									<tfoot class="table-secondary">
+											<tr>
+													<td>Rodapé 1</td>
+													<td>Rodapé 2</td>
+											</tr>
+									</tfoot>
+							</table>
+						</article>
+						<aside class="col-sm-4">
+							<h3 class="display-4">Links úteis</h3>
+							<a href="https://www.w3schools.com/html/default.asp">Tutorial HTML 5</a>
+							<a href="https://www.w3schools.com/css/default.asp" class="text-muted">Tutorial CSS 3</a>
+							<a href="https://validator.w3.org">Validador de HTML 5</a>
+							<a href="https://www.w3schools.com/bootstrap4/bootstrap_get_started.asp">Tutorial Bootstrap 4</a>
+							<a href="https://getbootstrap.com/" class="text-danger">Site Oficial Bootstrap 4</a>
+						</aside>
+					</div>
+				</main>
+				<footer>
+					<br /><br /><br />
+					IFSC 2019
+				</footer>
+			</div>
 		</body>
-
 </html>
