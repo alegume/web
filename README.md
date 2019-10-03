@@ -42,15 +42,15 @@ Repositório didático sobre HTML 5, CSS 3 e Bootstrap 4 e GIT. Usado nas discip
 
 10) Fazer merge da nova branch para a master (faça checkout na master primeiro)
 
-   `git merge nome-da-nova-branch`
+    `git merge nome-da-nova-branch`
 
 Opcionalmente, pode-se ignorar o fast-forward para preservar a topologia original do histórico de branchs
 
-   `git merge nome-da-nova-branch --no-ff`
+    `git merge nome-da-nova-branch --no-ff`
 
 11) Deletar uma branch local
 
-   `git branch -d nome-da-nova-branch`
+    `git branch -d nome-da-nova-branch`
 
 12) Deletar uma branch remota (cuidado!)
 
