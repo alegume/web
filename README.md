@@ -10,7 +10,8 @@ Repositório didático sobre HTML 5, CSS 3 e Bootstrap 4 e GIT. Usado nas discip
 
 2) Adicionar arquivos novos
 
-   $ git add .
+   `$ git add .`
+   
 3) Adicionar arquivos alterados e fazer o commit
 
-   $ git commit -am "Modificacoes XYZ"
+   `$ git commit -am "Modificacoes XYZ"`
