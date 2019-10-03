@@ -86,6 +86,12 @@ Git reset irá voltar o histórico de commits mas não os arquivos. Para resetar
 
 17) Criar uma nova tag e enviar para o servidor
 
- `git tag -a 1.2.3`
- 
- `git push origin 1.2.3`
+`git tag -a 1.2.3`
+
+`git push origin 1.2.3`
+
+18) Checkout em um branch remota
+
+`git pull --all`
+
+`git checkout nome-branch-remota`
