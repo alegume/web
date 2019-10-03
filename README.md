@@ -36,11 +36,11 @@ Repositório didático sobre HTML 5, CSS 3 e Bootstrap 4 e GIT. Usado nas discip
 
    `git checkout nome-da-nova-branch`
 
-8) Enviar nova branch para o servidor (commitar primeiro)
+9) Enviar nova branch para o servidor (commitar primeiro)
 
    `git push origin nome-da-nova-branch`
 
-9) Fazer merge da nova branch para a master (faça checkout na master primeiro)
+10) Fazer merge da nova branch para a master (faça checkout na master primeiro)
 
    `git merge nome-da-nova-branch`
 
@@ -48,11 +48,11 @@ Repositório didático sobre HTML 5, CSS 3 e Bootstrap 4 e GIT. Usado nas discip
 
    `git merge nome-da-nova-branch --no-ff`
 
-10) Deletar uma branch local
+11) Deletar uma branch local
 
    `git branch -d nome-da-nova-branch`
 
-11) Deletar uma branch remota (cuidado!)
+12) Deletar uma branch remota (cuidado!)
 
    `git push origin :the_remote_branch`
 
@@ -60,7 +60,7 @@ Repositório didático sobre HTML 5, CSS 3 e Bootstrap 4 e GIT. Usado nas discip
 
     `git push origin --delete the_remote_branch`
 
-12) Ver as branchs que já foram mergeadas na branch atual
+13) Ver as branchs que já foram mergeadas na branch atual
 
    `git branch --merged`
 
