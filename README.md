@@ -56,9 +56,9 @@ Opcionalmente, pode-se ignorar o fast-forward para preservar a topologia origina
 
 `git push origin :the_remote_branch`
 
-  Outra opção, mais verbosa, seria:
+Outra opção, mais verbosa, seria:
 
- `git push origin --delete the_remote_branch`
+`git push origin --delete the_remote_branch`
 
 13) Ver as branchs que já foram mergeadas na branch atual
 
@@ -80,7 +80,7 @@ Opcionalmente, pode-se ignorar o fast-forward para preservar a topologia origina
 
 `git reset --hard 87c581f09f680531b6b0eaee9329d364e961a7c3`
 
-  Git reset irá voltar o histórico de commits mas não os arquivos. Para resetar o histórico e os arquivos, é necessário usar a opção --hard. Após reverter o histórico e os arquivos, é necessário incluir o parâmetro --force ao efetuar o push. Veja um exemplo:
+Git reset irá voltar o histórico de commits mas não os arquivos. Para resetar o histórico e os arquivos, é necessário usar a opção --hard. Após reverter o histórico e os arquivos, é necessário incluir o parâmetro --force ao efetuar o push. Veja um exemplo:
 `git push origin develop --force`
 
 17) Criar uma nova tag e enviar para o servidor:
