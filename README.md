@@ -81,8 +81,11 @@ Outra opção, mais verbosa, seria:
 `git reset --hard 87c581f09f680531b6b0eaee9329d364e961a7c3`
 
 Git reset irá voltar o histórico de commits mas não os arquivos. Para resetar o histórico e os arquivos, é necessário usar a opção --hard. Após reverter o histórico e os arquivos, é necessário incluir o parâmetro --force ao efetuar o push. Veja um exemplo:
+
 `git push origin develop --force`
 
-17) Criar uma nova tag e enviar para o servidor:
+17) Criar uma nova tag e enviar para o servidor
+
  `git tag -a 1.2.3`
+ 
  `git push origin 1.2.3`
