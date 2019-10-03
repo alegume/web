@@ -44,7 +44,7 @@ Repositório didático sobre HTML 5, CSS 3 e Bootstrap 4 e GIT. Usado nas discip
 
    `git merge nome-da-nova-branch`
 
-  Opcionalmente, pode-se ignorar o fast-forward para preservar a topologia original do histórico de branchs
+   Opcionalmente, pode-se ignorar o fast-forward para preservar a topologia original do histórico de branchs
 
    `git merge nome-da-nova-branch --no-ff`
 
@@ -52,7 +52,7 @@ Repositório didático sobre HTML 5, CSS 3 e Bootstrap 4 e GIT. Usado nas discip
 
    `git branch -d nome-da-nova-branch`
 
-10) Deletar uma branch remota (cuidado!)
+11) Deletar uma branch remota (cuidado!)
 
    `git push origin :the_remote_branch`
 
@@ -60,29 +60,29 @@ Repositório didático sobre HTML 5, CSS 3 e Bootstrap 4 e GIT. Usado nas discip
 
     `git push origin --delete the_remote_branch`
 
-11) Ver as branchs que já foram mergeadas na branch atual
+12) Ver as branchs que já foram mergeadas na branch atual
 
    `git branch --merged`
 
-12) Ver as branchs que NÃO foram mergeadas na branch atual
+13) Ver as branchs que NÃO foram mergeadas na branch atual
 
    `git branch --no-merged`
 
-13) Sincronizar (só "baixa") as modificações do servidor
+14) Sincronizar (só "baixa") as modificações do servidor
 
    `git fetch origin --all`
 
-14) Remover arquivo pelo gitinore caso já tenha sido commitado anteriormente
+15) Remover arquivo pelo gitinore caso já tenha sido commitado anteriormente
 
    `git rm --cached name.txt`
 
-15) Reverter os arquivos para um versão anterior em caso de erro
+16) Reverter os arquivos para um versão anterior em caso de erro
 
    `git reset --hard 87c581f09f680531b6b0eaee9329d364e961a7c3`
 
   Git reset irá voltar o histórico de commits mas não os arquivos. Para resetar o histórico e os arquivos, é necessário usar a opção --hard. Após reverter o histórico e os arquivos, é necessário incluir o parâmetro --force ao efetuar o push. Veja um exemplo:
    `git push origin develop --force`
 
-16) Criar uma nova tag e enviar para o servidor:
+17) Criar uma nova tag e enviar para o servidor:
     `git tag -a 1.2.3`
     `git push origin 1.2.3`
