@@ -44,10 +44,9 @@ Repositório didático sobre HTML 5, CSS 3 e Bootstrap 4 e GIT. Usado nas discip
 
    `git merge nome-da-nova-branch`
 
-   Opcionalmente, pode-se ignorar o fast-forward para preservar a topologia original do histórico de branchs
+Opcionalmente, pode-se ignorar o fast-forward para preservar a topologia original do histórico de branchs
 
    `git merge nome-da-nova-branch --no-ff`
-
 
 11) Deletar uma branch local
 
