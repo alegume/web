@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Tabelas</title>
+		<title>Links</title>
 		<link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
 		<link rel="stylesheet" href="style/style.css">
 		<script src="vendor/jquery/jquery-3.4.1.min.js"></script>
@@ -13,10 +13,10 @@
 	</head>
 
 	<body>
-		<div class="container bg-light text-dark">
-			<header>
-				<h1 class="display-2">HTML 5 <small>+<code> Bootstrap 4</code></small></h1>
-			</header>
+		<header class="jumbotron text-center">
+			<h1 class="display-2">HTML 5 <small>+<code> Bootstrap 4</code></small></h1>
+		</header>
+		<div class="container bg-light text-dark p-3">
 			<main>
 				<nav>
 					<ul>
@@ -36,69 +36,71 @@
 					<article class="col-sm-8">
 						<h2 class="display-3" id="topo">Links em HTML</h2>
 
-						<h2>Básico</h2>
-						<p>Link externo: <a href="http://www.w3schools.com">W3Schools</a></p>
-						<p>Link interno: <a href="2_meta_tags.html">Meta Tags</a></p>
+						<div class="row mt-5">
+							<div class="col">
+								<h2>Básico</h2>
+								<p>Link externo: <a href="http://www.w3schools.com">W3Schools</a></p>
+								<p>Link interno: <a href="2_meta_tags.html">Meta Tags</a></p>
+							</div>
+							<div class="col">
+								<h2>Atributo target</h2>
+								<p> _self: <a href="http://www.w3schools.com" target="_self">W3Schools</a></p>
+								<p> _blank: <a href="http://www.w3schools.com" target="_blank">W3Schools</a></p>
+							</div>
+						</div>
 
-						<h2>Atributo target</h2>
-						<p> _self: <a href="http://www.w3schools.com" target="_self">W3Schools</a></p>
-						<p> _blank: <a href="http://www.w3schools.com" target="_blank">W3Schools</a></p>
+						<div class="row mt-5">
+							<div class="col">
+								<a href="http://www.w3schools.com" target="_blank">
+									<img src="img/figura1.png" alt="figura do html 5" class="img-thumbnail" />
+								</a>
+							</div>
+							<div class="col">
+								<h2 id="links">Links Âncoras / Bookmarks</h2>
 
-						<h2>Imagem como link</h2>
+								<p>
+									<a href="#topo">Topo</a>
+								</p>
+								<p>
+									<a href="#chateado">Chateado</a>
+								</p>
+								<p>
+									<a href="#pas">PAS</a>
+								</p>
+								<p>
+									<a href="#mussum">Mussum Ipsum</a>
+								</p>
+							</div>
+						</div>
 
-						<a href="http://www.w3schools.com" target="_blank">
-							<img src="img/figura1.png" alt="figura do html 5" />
-						</a>
-
-						<h2 id="links">Links Âncoras / Bookmarks</h2>
-
+						<h2 class="mt-5">Imagem como link</h2>
 						<p>
-							<a href="#topo">Topo</a>
-						</p>
-						<p>
-							<a href="#chateado">Chateado</a>
-						</p>
-						<p>
-							<a href="#pas">PAS</a>
-						</p>
-						<p>
-							<a href="#mussum">Mussum Ipsum</a>
-						</p>
-
-						<p>
-							<img src="img/chateado.jpg" id="chateado" alt="rechetegue chateado" />
+							<img src="img/chateado.jpg" id="chateado" alt="rechetegue chateado" class="rounded-circle" />
 						</p>
 						<br />
 						<p>
-							<img src="img/pas.jpg" id="pas" alt="rechetegue pas" />
+							<img src="img/pas.jpg" id="pas" alt="rechetegue pas" class="rounded" />
 						</p>
 
-						<h2 id="mussum"><a href="http://mussumipsum.com">Mussum Ipsum</a></h2>
+						<div class="row mt-5">
+							<div class="col-8">
+								<h2 id="mussum"><a href="http://mussumipsum.com">Mussum Ipsum</a></h2>
 
-						<p>Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. Leite de capivaris, leite de mula manquis sem cabeça. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.</p>
-						<p>Quem manda na minha terra sou euzis! Quem num gosta di mé, boa gentis num é. Aenean aliquam molestie leo, vitae iaculis nisl. Viva Forevis aptent taciti sociosqu ad litora torquent.</p>
-						<p>Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Diuretics paradis num copo é motivis de denguis. Quem num gosta di mim que vai caçá sua turmis! Sapien in monti palavris qui num significa nadis i pareci latim.</p>
-
-						<p>
-							<img src="img/mussum.jpg" alt="Foto do Mussum" />
-						</p>
-
-						<h5><a href="#topo">Topo</a> | <a href="#links">Links</a></h5>
-
-
-
-						<!-- <div class="row">
+								<p>Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. Leite de capivaris, leite de mula manquis sem cabeça. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.</p>
+								<p>Quem manda na minha terra sou euzis! Quem num gosta di mé, boa gentis num é. Aenean aliquam molestie leo, vitae iaculis nisl. Viva Forevis aptent taciti sociosqu ad litora torquent.</p>
+								<p>Não sou faixa preta cumpadi, sou preto inteiris, inteiris. Diuretics paradis num copo é motivis de denguis. Quem num gosta di mim que vai caçá sua turmis! Sapien in monti palavris qui num significa nadis i pareci latim.</p>
+							</div>
 							<div class="col">
-
+								<p>
+									<img src="img/mussum.jpg" alt="Foto do Mussum" class="img-thumbnail" />
+								</p>
 							</div>
-							<div class="col-5">
-
-							</div>
-						</div> -->
+						</div>
+						<a href="#topo" class="text-danger">Topo</a> | <a href="#links" class="text-danger">Links</a>
 						<br />
 						<h2>Boas práticas</h2>
-						<p>É sempre bom separar os elementos em uma tabela por categoria como: thead, tbody, tfoot. Será de grande ajuda ao definir os estilos com CSS e é importante para ferramentas de acessibilidade.</p>
-						<p>Permite que o navegador possa rolar os dados independentes do cabeçalho ou rodapé da tabela. Também permite que o cabeçalho e rodapé possam ser replicados nas diversas páginas, no caso de impressão de longas tabelas.</p>
+						<p class="lead">É sempre bom separar os elementos em uma tabela por categoria como: thead, tbody, tfoot. Será de grande ajuda ao definir os estilos com CSS e é importante para ferramentas de acessibilidade.</p>
+						<p class="lead">Permite que o navegador possa rolar os dados independentes do cabeçalho ou rodapé da tabela. Também permite que o cabeçalho e rodapé possam ser replicados nas diversas páginas, no caso de impressão de longas tabelas.</p>
 					</article>
 					<aside class="col-sm-4">
 						<h3 class="display-4">Links úteis</h3>
