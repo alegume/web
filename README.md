@@ -70,7 +70,7 @@ Outra opção, mais verbosa, seria:
 
 14) Sincronizar (só "baixa") as modificações do servidor
 
-`git fetch origin --all`
+`git fetch --all`
 
 15) Remover arquivo pelo gitinore caso já tenha sido commitado anteriormente
 
