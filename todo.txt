@@ -1,5 +1,5 @@
 ---------- TODO
-Ícones, menu em todas as práginas
+Ícones, menu em todas as páginas
 
 
 
@@ -8,6 +8,11 @@ Bootstrap
 
 
 ---------- DONE
+Bootstrap imgs
+Bootstrap imgs
+Bootstrap tables
+Bootstrap grid
+Bootstrap typography
 Update README.md
 criação menu
 branchs
