@@ -35,20 +35,20 @@
 				<div class="row">
 					<article class="col-sm-8">
 						<h2 class="display-3" id="topo">Links em HTML</h2>
-
+						<hr />
 						<div class="row mt-5">
 							<div class="col">
 								<h2>Básico</h2>
-								<p>Link externo: <a href="http://www.w3schools.com">W3Schools</a></p>
-								<p>Link interno: <a href="2_meta_tags.html">Meta Tags</a></p>
+								<p>Link externo: <a class="btn btn-primary" href="http://www.w3schools.com">W3Schools</a></p>
+								<p>Link interno: <a class="btn btn-primary" href="2_meta_tags.html">Meta Tags</a></p>
 							</div>
 							<div class="col">
 								<h2>Atributo target</h2>
-								<p> _self: <a href="http://www.w3schools.com" target="_self">W3Schools</a></p>
-								<p> _blank: <a href="http://www.w3schools.com" target="_blank">W3Schools</a></p>
+								<p> _self: <a class="btn btn-outline-dark" href="http://www.w3schools.com" target="_self">W3Schools</a></p>
+								<p> _blank: <a class="btn btn-outline-dark" href="http://www.w3schools.com" target="_blank">W3Schools</a></p>
 							</div>
 						</div>
-
+						<hr />
 						<div class="row mt-5">
 							<div class="col">
 								<a href="http://www.w3schools.com" target="_blank">
@@ -59,20 +59,20 @@
 								<h2 id="links">Links Âncoras / Bookmarks</h2>
 
 								<p>
-									<a href="#topo">Topo</a>
+									<a class="btn btn-danger" href="#topo">Topo</a>
 								</p>
 								<p>
-									<a href="#chateado">Chateado</a>
+									<a class="btn btn-info" href="#chateado">Chateado</a>
 								</p>
 								<p>
-									<a href="#pas">PAS</a>
+									<a class="btn btn-primary" href="#pas">PAS</a>
 								</p>
 								<p>
-									<a href="#mussum">Mussum Ipsum</a>
+									<a class="btn btn-secondary" href="#mussum">Mussum Ipsum</a>
 								</p>
 							</div>
 						</div>
-
+						<hr />
 						<h2 class="mt-5">Imagem como link</h2>
 						<p>
 							<img src="img/chateado.jpg" id="chateado" alt="rechetegue chateado" class="rounded-circle" />
@@ -81,7 +81,7 @@
 						<p>
 							<img src="img/pas.jpg" id="pas" alt="rechetegue pas" class="rounded" />
 						</p>
-
+						<hr />
 						<div class="row mt-5">
 							<div class="col-8">
 								<h2 id="mussum"><a href="http://mussumipsum.com">Mussum Ipsum</a></h2>
@@ -96,8 +96,9 @@
 								</p>
 							</div>
 						</div>
-						<a href="#topo" class="text-danger">Topo</a> | <a href="#links" class="text-danger">Links</a>
+						<a href="#topo" class="btn btn-danger mr-3">Topo</a><a href="#links" class="btn btn-danger">Links</a>
 						<br />
+						<hr />
 						<h2>Boas práticas</h2>
 						<p class="lead">É sempre bom separar os elementos em uma tabela por categoria como: thead, tbody, tfoot. Será de grande ajuda ao definir os estilos com CSS e é importante para ferramentas de acessibilidade.</p>
 						<p class="lead">Permite que o navegador possa rolar os dados independentes do cabeçalho ou rodapé da tabela. Também permite que o cabeçalho e rodapé possam ser replicados nas diversas páginas, no caso de impressão de longas tabelas.</p>
