@@ -1,5 +1,5 @@
 # HTML 5
-Repositório didático sobre HTML 5, CSS 3 e Bootstrap 4 e GIT. Usado nas disciplinas de Programação para a Internet I e Tecnologias para Web no IFSC - Canoinhas.
+Repositório didático sobre HTML 5, CSS 3, Bootstrap 4 e GIT. Usado nas disciplinas de Programação para a Internet I e Tecnologias para Web no IFSC - Canoinhas.
 
 
 ### GIT (Lembretes)
