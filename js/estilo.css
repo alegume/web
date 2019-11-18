@@ -1,0 +1,11 @@
+body {
+	color: blue;
+	background-color: #ccc;
+}
+
+h1 {
+	font-family: "Times New Roman", Times, serif;
+	color: black;
+	margin: 40px;
+	border: 2px dashed black;
+}
