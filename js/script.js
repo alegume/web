@@ -42,7 +42,7 @@ for (let i = 0; i < 5; ) {
 // Objetos
 let obj1 = new Object();
 let obj2 = {
-	nome: "Alexandre",
+	nome: "Augusto",
 	cpf: "086.444.222-34",
 	msg: function(str) { alert(str); },
 	msg2: (str) => alert(obj2.nome),
@@ -58,12 +58,12 @@ for (let key in obj3) {
 	console.log(key + " -> " + obj2[key]);
 }
 
-obj2.msg2("oi22");
+// obj2.msg2();
 
 let usuario = {
-	nome: "Alexandre",
+	nome: "Augusto",
 	idade: 7,
-	maior: () => (usuario.idade < 18) ? "Menor": "Maior"
+	maior: () => (usuario.idade < 18) ? "Menor" : "Maior"
 };
 
 console.log(usuario.maior());
