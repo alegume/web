@@ -25,8 +25,8 @@
 let num = 123;
 num++;
 console.log(num);
-const pii = 3.141592653589793;
-console.log(pii);
+const PAI = 3.141592653589793;
+console.log(PAI);
 
 
 // Arrow functions
