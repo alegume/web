@@ -1,103 +1,100 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Listas</title>
+    </head>
+    <body>
+        <h1>Listas</h1>
 
-		<head>
-				<meta charset="utf-8">
-				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-				<title>Listas</title>
-		</head>
+        <h3>Listas Ordenadas</h3>
+        <ol>
+            <li>Passo 1</li>
+            <li>Passo 2</li>
+            <li>Passo 3</li>
+        </ol>
 
-		<body>
-				<h1>Listas</h1>
+        <h3>Listas Ordenadas - Início</h3>
+        <ol start="23">
+            <li>Passo 23</li>
+            <li>Passo 24</li>
+            <li>Passo 25</li>
+        </ol>
 
-				<h3>Listas Ordenadas</h3>
-				<ol>
-						<li>Passo 1</li>
-						<li>Passo 2</li>
-						<li>Passo 3</li>
-				</ol>
+        <h3>Listas Ordenadas - Tipos</h3>
+        <!--
+            type="1" - Números (default)
+            type="A" - Letras Maiúsculas
+            type="a" - Letras minúsculas
+            type="I" - Números romanos Maiúculas
+            type="i" - Números romanos minúsculas
+        -->
+        <ol type="i">
+            <li>Algoritmo 1</li>
+            <li>Algoritmo 2</li>
+            <li>Algoritmo 3</li>
+        </ol>
 
-				<h3>Listas Ordenadas - Início</h3>
-				<ol start="23">
-						<li>Passo 23</li>
-						<li>Passo 24</li>
-						<li>Passo 25</li>
-				</ol>
+        <h3>Listas não ordenadas</h3>
+        <ul>
+            <li>Música 1</li>
+            <li>Música 2 </li>
+            <li>Música 3</li>
+        </ul>
 
-				<h3>Listas Ordenadas - Tipos</h3>
-				<!--
-						type="1" - Números (default)
-						type="A" - Letras Maiúsculas
-						type="a" - Letras minúsculas
-						type="I" - Números romanos Maiúculas
-						type="i" - Números romanos minúsculas
-				-->
-				<ol type="i">
-						<li>Algoritmo 1</li>
-						<li>Algoritmo 2</li>
-						<li>Algoritmo 3</li>
-				</ol>
+        <h3>Listas não ordenadas - Estilos</h3>
+        <!--
+            disc
+            circle
+            square
+            none
+        -->
+        <ul style="list-style-type: circle;">
+            <li>Legume 1</li>
+            <li>Legume 2 </li>
+            <li>Legume 3</li>
+        </ul>
 
-				<h3>Listas não ordenadas</h3>
-				<ul>
-						<li>Música 1</li>
-						<li>Música 2 </li>
-						<li>Música 3</li>
-				</ul>
+        <h3>Listas de descrição</h3>
+        <dl>
+            <dt>Termo 1</dt>
+            <dd>-- Descrição do termo 1</dd>
 
-				<h3>Listas não ordenadas - Estilos</h3>
-				<!--
-						disc
-						circle
-						square
-						none
-				-->
-				<ul style="list-style-type: circle;">
-						<li>Legume 1</li>
-						<li>Legume 2 </li>
-						<li>Legume 3</li>
-				</ul>
+            <dt>Termo 2</dt>
+            <dd>-- Descrição do termo 2</dd>
+        </dl>
 
-				<h3>Listas de descrição</h3>
-				<dl>
-						<dt>Termo 1</dt>
-						<dd>-- Descrição do termo 1</dd>
+        <h3>Listas aninhadas</h3>
+        <ul>
+            <li>
+                Algoritmo A
+                <ol>
+                    <li>Passo 1</li>
+                    <li>Passo 2</li>
+                    <li>Passo 3</li>
+                </ol>
+            </li>
 
-						<dt>Termo 2</dt>
-						<dd>-- Descrição do termo 2</dd>
-				</dl>
+            <li>
+                Algoritmo B
+                <ol>
+                    <li>Passo 1</li>
+                    <li>Passo 2</li>
+                </ol>
+            </li>
+            <li>
+                Algoritmo C
+                <ol>
+                    <li>Passo 1</li>
+                    <li>Passo 2</li>
+                    <li>Passo 3</li>
+                    <li>Passo 4</li>
+                    <li>Passo 5</li>
+                </ol>
+            </li>
+        </ul>
 
-				<h3>Listas aninhadas</h3>
-				<ul>
-						<li>
-								Algoritmo A
-								<ol>
-										<li>Passo 1</li>
-										<li>Passo 2</li>
-										<li>Passo 3</li>
-								</ol>
-						</li>
-
-						<li>
-								Algoritmo B
-								<ol>
-										<li>Passo 1</li>
-										<li>Passo 2</li>
-								</ol>
-						</li>
-						<li>
-								Algoritmo C
-								<ol>
-										<li>Passo 1</li>
-										<li>Passo 2</li>
-										<li>Passo 3</li>
-										<li>Passo 4</li>
-										<li>Passo 5</li>
-								</ol>
-						</li>
-				</ul>
-
-		</body>
-
+    </body>
 </html>
