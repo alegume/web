@@ -1,143 +1,139 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tabelas</title>
 
-		<head>
-				<meta charset="utf-8">
-				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-				<title>Tabelas</title>
+        <style>
+            table, th, td {
+                border: solid 1px black;
+                border-collapse: collapse;
+                padding: 10px;
+            }
 
-				<style>
-						table, th, td {
-								border: solid 1px black;
-								border-collapse: collapse;
-								padding: 10px;
-						}
+            th {
+                text-align: center;
+            }
 
-						th {
-								text-align: center;
-						}
+            td {
+                text-align: left;
+            }
 
-						td {
-								text-align: left;
-						}
+            p {
+                max-width: 600px;
+            }
 
-						p {
-								max-width: 600px;
-						}
+            tbody#destaque:hover, tr:hover {
+                background-color: #ccc;
+            }
 
-						tbody#destaque:hover, tr:hover {
-								background-color: #ccc;
-						}
+        </style>
+    </head>
+    <body>
+        <h1>Tabelas</h1>
+        <table>
+            <caption>Exemplo de Legenda</caption>
+            <!-- Caption precisa estar logo apos table -->
+            <tr>
+                <th>Cabeçalho 1</th>
+                <th>Cabeçalho 2</th>
+                <th>Cabeçalho 3</th>
+            </tr>
 
-				</style>
+            <tr>
+                <!--
+                    td contem os dados das células
+                    Pode conter todo tipo de elemento html como
+                    texto, imagens, links, outras tabelas, etc
+                -->
+                <td>Dado 1</td>
+                <td>Dado 2</td>
+                <td>Dado 3</td>
+            </tr>
+            <tr>
+                <td>Dado 1</td>
+                <td>Dado 2</td>
+                <td>Dado 3</td>
+            </tr>
+            <tr>
+                <td>Dado 1</td>
+                <td>Dado 2</td>
+                <td>Dado 3</td>
+            </tr>
+        </table>
 
-		</head>
+        <br />
 
-		<body>
-				<h1>Tabelas</h1>
-				<table>
-						<caption>Exemplo de Legenda</caption>
-						<!-- Caption precisa estar logo apos table -->
-						<tr>
-								<th>Cabeçalho 1</th>
-								<th>Cabeçalho 2</th>
-								<th>Cabeçalho 3</th>
-						</tr>
+        <table>
+            <tr>
+                <th>Cliente</th>
+                <th colspan="2">Telefones</th>
+            </tr>
 
-						<tr>
-								<!--
-										td contem os dados das células
-										Pode conter todo tipo de elemento html como
-										texto, imagens, links, outras tabelas, etc
-								-->
-								<td>Dado 1</td>
-								<td>Dado 2</td>
-								<td>Dado 3</td>
-						</tr>
-						<tr>
-								<td>Dado 1</td>
-								<td>Dado 2</td>
-								<td>Dado 3</td>
-						</tr>
-						<tr>
-								<td>Dado 1</td>
-								<td>Dado 2</td>
-								<td>Dado 3</td>
-						</tr>
-				</table>
+            <tr>
+                <td>Mc Bin Laden</td>
+                <td>47 99999-8877</td>
+                <td>47 99999-8878</td>
+            </tr>
 
-				<br />
+            <tr>
+                <td>Mc Toy</td>
+                <td>47 99999-8876</td>
+                <td>47 99999-8875</td>
+            </tr>
+        </table>
 
-				<table>
-						<tr>
-								<th>Cliente</th>
-								<th colspan="2">Telefones</th>
-						</tr>
+        <br />
 
-						<tr>
-								<td>Mc Bin Laden</td>
-								<td>47 99999-8877</td>
-								<td>47 99999-8878</td>
-						</tr>
+        <table>
+            <tr>
+                <th>Cliente:</th>
+                <td>Mc DeuMal</td>
+            </tr>
+            <tbody id="destaque">
+            <tr>
+                <th rowspan="2">Telefones:</th>
+                <td>47 99999-7625</td>
+            </tr>
+            <tr>
+                <td>47 99999- 4321</td>
+            </tr>
+            <tbody>
+        </table>
 
-						<tr>
-								<td>Mc Toy</td>
-								<td>47 99999-8876</td>
-								<td>47 99999-8875</td>
-						</tr>
-				</table>
+        <br />
+        <h1>Boas práticas</h1>
+        <p>É sempre bom separar os elementos em uma tabela por categoria como: thead, tbody, tfoot. Será de grande ajuda ao definir os estilos com CSS e é importante para ferramentas de acessibilidade.</p>
+        <p>Permite que o navegador possa rolar os dados independentes do cabeçalho ou rodapé da tabela. Também permite que o cabeçalho e rodapé possam ser replicados nas diversas páginas, no caso de impressão de longas tabelas.</p>
+        <p>
 
-				<br />
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Cabeçalho 1</th>
+                    <th>Cabeçalho 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Conteúdo 1</td>
+                    <td>Conteúdo 2</td>
+                </tr>
+                <tr>
+                    <td>Conteúdo 3</td>
+                    <td>Conteúdo 4</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Rodapé 1</td>
+                    <td>Rodapé 2</td>
+                </tr>
+            </tfoot>
+        </table>
 
-				<table>
-						<tr>
-								<th>Cliente:</th>
-								<td>Mc DeuMal</td>
-						</tr>
-						<tbody id="destaque">
-						<tr>
-								<th rowspan="2">Telefones:</th>
-								<td>47 99999-7625</td>
-						</tr>
-						<tr>
-								<td>47 99999- 4321</td>
-						</tr>
-						<tbody>
-				</table>
-
-				<br />
-				<h1>Boas práticas</h1>
-				<p>É sempre bom separar os elementos em uma tabela por categoria como: thead, tbody, tfoot. Será de grande ajuda ao definir os estilos com CSS e é importante para ferramentas de acessibilidade.</p>
-				<p>Permite que o navegador possa rolar os dados independentes do cabeçalho ou rodapé da tabela. Também permite que o cabeçalho e rodapé possam ser replicados nas diversas páginas, no caso de impressão de longas tabelas.</p>
-				<p>
-
-				</p>
-				<table>
-						<thead>
-								<tr>
-										<th>Cabeçalho 1</th>
-										<th>Cabeçalho 2</th>
-								</tr>
-						</thead>
-						<tbody>
-								<tr>
-										<td>Conteúdo 1</td>
-										<td>Conteúdo 2</td>
-								</tr>
-								<tr>
-										<td>Conteúdo 3</td>
-										<td>Conteúdo 4</td>
-								</tr>
-						</tbody>
-						<tfoot>
-								<tr>
-										<td>Rodapé 1</td>
-										<td>Rodapé 2</td>
-								</tr>
-						</tfoot>
-				</table>
-
-		</body>
-
+    </body>
 </html>
